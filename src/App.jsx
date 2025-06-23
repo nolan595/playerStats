@@ -7,9 +7,9 @@ import OfferPage from "./features/offer/pages/OfferPage.jsx";
 
 function App() {
   return (
-    <div className="app">
+    <div className="flex w-full min-h-screen">
       <Sidebar />
-      <div className="content">
+      <div className="flex-1 bg-gray-200">
         <Routes>
           <Route path="/teams" element={<Teams />} />
           <Route path="/sport-events" element={<OfferPage />} />

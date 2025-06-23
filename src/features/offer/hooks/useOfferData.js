@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { fetchOfferData } from '../services/offerApi';
+import { useState, useEffect } from "react";
+import { fetchOfferData } from "../services/offerApi";
 
 const useOfferData = (params) => {
   const [data, setData] = useState([]);
@@ -22,7 +22,7 @@ const useOfferData = (params) => {
     };
 
     load();
-  }, [JSON.stringify(params)]); // Refetch if params change
+  }, [JSON.stringify(params)]);
 
   return { data, loading, error };
 };
