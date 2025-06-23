@@ -25,9 +25,11 @@ const Sidebar = () => {
         <li className="inactive">
           <FaList /> Games
         </li>
+        <Link to='/sport-events'>
         <li className="inactive">
           <FaCalendarAlt /> External Sport Events
         </li>
+        </Link>
         <Link to="/teams">
         <li className="inactive">
           <FaUsers /> Teams
